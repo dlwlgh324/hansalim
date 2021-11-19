@@ -1,5 +1,31 @@
 // html 이 준비가 되면 실행한다.
 $(document).ready(function () {
+    //모달창
+    let modal = $('.modal');
+    let modal_cont = $('.modal-cont');
+    let modal_close = $('.modal-close');
+    let modal_show = $('.modal-show');
+
+    // modal_close클릭 시 modal 사라지기
+    modal_close.click(function () {
+        modal.fadeOut();
+    });
+
+    //modal클릭 시 modal사라지기
+    modal.click(function () {
+        modal.fadeOut();
+    });
+
+    //.modal-cont 를 마우스로 클릭하면 사라지지않기
+    modal_cont.click(function (event) {
+        event.stopPropagation();
+    });
+
+    //modal-show href막기 & 사라지게하기
+    modal_show.click(function (event) {
+        event.preventDefault();
+        modal.fadeOut();
+    });
 
 
     // 위로가기 기능
