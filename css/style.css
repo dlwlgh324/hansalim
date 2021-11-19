@@ -2424,7 +2424,14 @@ body {
 }
 
 /* 탭메뉴 포커스  */
-.tab-menu {
+.tab-menu-1 {
+    display: inline-block;
+    color: #999;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.tab-menu-2 {
     display: inline-block;
     color: #999;
     font-weight: 400;
@@ -2454,26 +2461,26 @@ body {
 
 /* 탭 메뉴 내용 리스트 */
 
-.com-news-list {
+.com-news-list-1 {
     position: absolute;
     left: 0;
     top: 0%;
     width: 100%;
-    display: none;
+    display: block;
 }
 
 .com-news-list-active {
     display: block;
 }
 
-.com-news-list>li {
+.com-news-list-1>li {
     position: relative;
     display: block;
     overflow: hidden;
     margin-bottom: 1rem;
 }
 
-.com-news-list>li>a {
+.com-news-list-1>li>a {
     display: block;
     float: left;
     font-size: 1.3rem;
@@ -2483,7 +2490,42 @@ body {
     line-height: 1.461;
 }
 
-.com-news-list>li>span {
+.com-news-list-1>li>span {
+    display: block;
+    float: right;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #999;
+    letter-spacing: -0.0325rem;
+    line-height: 1.461;
+}
+
+.com-news-list-2 {
+    position: absolute;
+    left: 0;
+    top: 0%;
+    width: 100%;
+    display: none;
+}
+
+.com-news-list-2>li {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.com-news-list-2>li>a {
+    display: block;
+    float: left;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: -0.0325rem;
+    line-height: 1.461;
+}
+
+.com-news-list-2>li>span {
     display: block;
     float: right;
     font-size: 1.3rem;
