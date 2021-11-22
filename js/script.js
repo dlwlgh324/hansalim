@@ -177,6 +177,7 @@ $(document).ready(function () {
     let famous_icon = $('.sw-famous .swiper-slide>a');
     // 목록들
     let famous_good_list = $('.famous .good-list');
+
     famous_good_list.eq(0).show();
 
     $.each(famous_icon, function (index, item) {
